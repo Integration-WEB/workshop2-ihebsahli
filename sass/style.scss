@@ -1,0 +1,40 @@
+@import "mixin";
+
+.text{
+    color: red;
+    font-size: 20px;
+}
+.textarea,h1{
+    @extend .text
+}
+
+.btn {
+
+    @include border-button;
+}
+
+@function background($color){
+
+    @if ($color==white) {
+        @return black;
+    }
+    @else {
+       @return white;
+    }
+        
+}
+
+$langages:"react","spring","python";
+@function firstElemnt($list){
+    @return nth($list,1);
+}
+
+
+@function lastElement($list){
+    @return nth($list,-1);
+    @return nth($list,length($list));
+}
+
+.text1{
+    content: firstElemnt($langages);
+}

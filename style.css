@@ -1,0 +1,14 @@
+.text, .textarea, h1 {
+  color: red;
+  font-size: 20px;
+}
+
+.btn {
+  border: 3px solid yellow;
+}
+
+.text1 {
+  content: "react";
+}
+
+/*# sourceMappingURL=style.css.map */
